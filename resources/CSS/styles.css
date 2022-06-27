@@ -1,14 +1,17 @@
+/* Universal styles*/
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: hsl(0, 3%, 29%);
 }
+
+/* Header section */
 
 header {
     height: 4rem;
@@ -18,9 +21,9 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-
+    z-index: 5;
+    background-color: white;
 }
-
 
 header img {
     margin-left: 1.5rem;
@@ -38,9 +41,57 @@ header span strong {
 
 nav {
     margin-left: auto;
+    margin-right: 1.5rem;
 }
 
 nav ul li {
     display: inline-block;
     margin-left: 1rem;
+}
+
+/* Banner section */
+
+.banner {
+    position: relative;
+    top: 3.9rem;
+    width: 100%;
+    display: flex;
+    background-color: rgb(221, 216, 216);
+}
+
+.banner img {
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.banner .learn {
+    width: calc(40% - 1.5rem);
+    position: relative;
+    left: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.banner .learn h1,
+.banner .learn h2,
+.banner .learn button {
+    width: calc(100% - 3rem);
+    margin: 0.5rem auto;
+}
+
+.banner .learn h1 {
+    font-size: 3rem;
+}
+
+.banner .learn button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    background-color: hsl(0, 3%, 19%);
+    border: none;
 }
