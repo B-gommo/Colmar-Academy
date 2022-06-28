@@ -57,31 +57,25 @@ nav ul li {
     width: 100%;
     display: flex;
     background-color: rgb(221, 216, 216);
+    padding-left: 1.5rem;
 }
 
 .banner img {
-    width: 60%;
-    height: auto;
-    position: relative;
-    left: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    width: 60vw;
+    padding: 2rem 1.5rem 2rem 0;
 }
 
 .banner .learn {
-    width: calc(40% - 1.5rem);
-    position: relative;
-    left: 1.5rem;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
 }
 
 .banner .learn h1,
-.banner .learn h2,
-.banner .learn button {
-    width: calc(100% - 3rem);
-    margin: 0.5rem auto;
+.banner .learn h2 {
+    width: 100%;
+    margin: 0 auto 0.5rem 0;
 }
 
 .banner .learn h1 {
@@ -92,6 +86,111 @@ nav ul li {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: white;
-    background-color: hsl(0, 3%, 19%);
+    background-color: hsl(0, 3%, 29%);
     border: none;
+    width: 70%;
+    margin-bottom: 0.5rem;
+}
+
+/* Information section */
+
+.information {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 4rem;
+    padding-left: 1.5rem;
+}
+
+.info-left {
+    width: calc(60% + 3rem);
+    
+    
+}
+
+.info-left img {
+    width: 60vw;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1.5rem;
+}
+
+.info-left h1,
+.info-left p,
+.info-left h2 {
+    width: 60vw;
+}
+
+.info-left h1 {
+    margin-bottom: 1.5rem;
+    position: relative;
+    top: -0.3rem;
+}
+
+.info-left p {
+    margin-bottom: 2rem;
+      
+}
+
+.info-right {
+    width: calc(40% - 1rem);
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgb(221, 216, 216);
+}
+
+.info-right img {
+    width: 35%;
+    height: auto;
+    padding: 1rem 1rem;
+}
+
+.info-right h2,
+.info-right p {
+    padding-bottom: 0.5rem;
+
+}
+
+.info-right a {
+    text-decoration: none;
+    color: hsl(207, 91%, 64%);
+    font-weight: 700;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#orientation-box {
+    padding-top: 1rem;
+    border-bottom: 1px solid rgb(221, 216, 216);
+    margin-bottom: 1px;
+}
+
+#campus-box {
+    border-top: 1px solid rgb(221, 216, 216);
+}
+
+#guest-box {
+    background-color: rgb(221, 216, 216);
+}
+
+
+@media only screen and (max-width: 850px) {
+    
+    h2 {
+        font-size: 1rem;
+    }
+
+    #school-name {
+        display: none;
+    }
+
 }
