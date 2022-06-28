@@ -56,7 +56,7 @@ nav ul li {
     top: 3.9rem;
     width: 100%;
     display: flex;
-    background-color: rgb(221, 216, 216);
+    background-color: hsl(0, 3%, 90%);
     padding-left: 1.5rem;
 }
 
@@ -70,6 +70,7 @@ nav ul li {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    padding-left: 2.5rem;
 }
 
 .banner .learn h1,
@@ -136,7 +137,7 @@ nav ul li {
     width: calc(40% - 1rem);
     display: flex;
     flex-direction: column;
-    border-left: 1px solid rgb(221, 216, 216);
+    border-left: 1px solid hsl(0, 3%, 90%);
 }
 
 .info-right img {
@@ -170,27 +171,113 @@ nav ul li {
 
 #orientation-box {
     padding-top: 1rem;
-    border-bottom: 1px solid rgb(221, 216, 216);
+    border-bottom: 1px solid hsl(0, 3%, 85%);
     margin-bottom: 1px;
 }
 
 #campus-box {
-    border-top: 1px solid rgb(221, 216, 216);
+    border-top: 1px solid hsl(0, 3%, 85%);
 }
 
 #guest-box {
-    background-color: rgb(221, 216, 216);
+    background-color: hsl(0, 3%, 80%);
 }
 
 
-@media only screen and (max-width: 850px) {
+/* Start learning section */
+
+.start-learning {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 2rem;
+    width: 100%;
+    position: relative;
+    top: 4.06rem;
+    background-color: hsl(0, 3%, 90%);
+}
+
+.start-learning h1 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.learn-box {
+    margin: 1rem 1rem;
+    background-color: white;
+    width: 25%;
+}
+
+.learn-box img {
+    width: 100%;
+    height: auto;
+}
+
+.learn-box h2 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.learn-box h3 {
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.learn-box p {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+
+/* Media queries */
+
+
+@media only screen and (max-width: 950px) {
     
     h2 {
         font-size: 1rem;
     }
 
+    .banner .learn h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-left h1 {
+        margin-bottom: 1.5rem;
+        position: relative;
+        top: -0.3rem;
+        font-size: 1.5rem;
+    }
+
+    .learn-box {
+        width: 45%;
+    }
+
+
     #school-name {
         display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .learn-box {
+        width: calc(100vw - 55%);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .learn-box {
+        width: 90%;
     }
 
 }
