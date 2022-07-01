@@ -25,6 +25,10 @@ header {
     background-color: white;
 }
 
+header a {
+    color: hsl(0, 3%, 29%);
+}
+
 header img {
     margin-left: 1.5rem;
     height: 3rem;
@@ -103,9 +107,12 @@ nav ul li {
     padding-left: 1.5rem;
 }
 
+.mobile {
+    display: none;
+}
+
 .info-left {
     width: calc(60% + 3rem);
-    
     
 }
 
@@ -187,6 +194,19 @@ nav ul li {
 #fisma {
     background-color: hsl(0, 3%, 80%);
     margin-top: 0.06rem;
+}
+
+.thesis-heading {
+    position: relative;
+    top: 4rem;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+}
+
+#thesis-right {
+    position: relative;
+    top: 2rem;
+    border: none;
 }
 
 
@@ -275,6 +295,196 @@ footer a {
 
 /* Media queries */
 
+@media only screen and (min-width: 450px) {
+    #header-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #header-desktop {
+        display: none;
+    }
+
+    header {
+        height: 4rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 5;
+        background-color: white;
+    }
+    /*banner section*/
+    .banner {
+        position: relative;
+        top: 3.9rem;
+        width: 100%;
+        display: block;
+        background-color: hsl(0, 3%, 90%);
+        padding: 0 0;
+    }
+    
+    .banner img {
+        width: 100vw;
+        padding: 0 0;
+    }
+
+    .banner .learn {
+        width: 100%;
+        display: block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .banner .learn h1 {
+        font-size: 3rem;
+        margin: 2rem auto;
+    }
+
+    .banner .learn h2 {
+        margin: 1.5rem auto;
+    }
+    
+    .banner .learn button {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        color: white;
+        background-color: hsl(0, 1%, 58%);
+        border: none;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    /* Information section */
+    .info-left {
+        display: none;
+    }
+
+    .info-right {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+
+    .info-box {
+        display: block;
+        width: 100%;
+    }
+
+    .info-box img,
+    .info-box h2,
+    .info-box p,
+    .info-box a {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .info-box a {
+        margin-bottom: 3rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    #orientation-box,
+    #campus-box,
+    #guest-box {
+        background-color: white;
+        border: none;
+        padding-top: 0;
+    }
+
+    #guest-box a {
+        margin-bottom: 2rem;
+    }
+
+    .information {
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 4rem;
+        padding-left: 1rem;
+    }
+
+    /*Start learning section */
+
+    .start-learning h1 {
+        padding-top: 2rem;
+        padding-bottom: 0;
+        border-top: 0.06rem solid hsl(0, 3%, 90%);
+    }
+
+    .start-learning {
+        background-color: white;
+        padding: 0 0;
+        display: block;
+    }
+
+    .learn-box {
+        margin: 0.5rem auto;
+    }
+
+    .learn-box img,
+    .learn-box h3,
+    .learn-box p,
+    .learn-box a {
+        display: none;
+    }
+
+    .learn-box h2 {
+        padding: 1.5rem 1rem;
+        margin-bottom: 0;
+        background-color: hsl(0, 3%, 90%);
+
+    }
+
+    /* Thesis section */
+
+    #thesis {
+        padding-left: 0;
+    }
+    #thesis-right {
+        display: none;
+    }
+
+    .thesis-heading {
+        margin: 2rem auto 1rem auto;
+        text-align: center;
+        padding-top: 2rem;
+        border-top: 0.06rem solid hsl(0, 3%, 90%);
+    }
+
+    #thesis-left {
+        display: block;
+        width: 100%;
+    }
+
+    #thesis-left h1,
+    #thesis-left p {
+        display: none;
+    }
+
+    #thesis-left video {
+        width: 100%;
+        height: auto;
+        padding: 0 0;
+        margin-bottom: 1.5rem;
+    }
+
+    /* footer */
+
+    footer ul {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 950px) {
     
