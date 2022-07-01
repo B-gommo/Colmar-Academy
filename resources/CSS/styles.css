@@ -93,7 +93,7 @@ nav ul li {
     margin-bottom: 0.5rem;
 }
 
-/* Information section */
+/* Information section also used for Thesis section as code works for both */
 
 .information {
     display: flex;
@@ -109,7 +109,8 @@ nav ul li {
     
 }
 
-.info-left img {
+.info-left img,
+.info-left video {
     width: 60vw;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -183,6 +184,11 @@ nav ul li {
     background-color: hsl(0, 3%, 80%);
 }
 
+#fisma {
+    background-color: hsl(0, 3%, 80%);
+    margin-top: 0.06rem;
+}
+
 
 /* Start learning section */
 
@@ -224,12 +230,44 @@ nav ul li {
     font-weight: 400;
     padding-top: 0.5rem;
     padding-left: 1rem;
+    color: hsl(0, 3%, 59%);
 }
 
 .learn-box p {
     padding-top: 0.5rem;
     padding-left: 1rem;
     padding-bottom: 1.5rem;
+    color: hsl(0, 3%, 59%);
+}
+
+.learn-box a {
+    color: hsl(0, 3%, 59%);
+}
+
+/*footer*/
+
+footer {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-top: 0.06rem solid hsl(0, 3%, 85%);
+    font-size: 0.75rem;
+}
+
+footer ul {
+    margin-left: auto;
+}
+
+footer ul li {
+    display: inline-block;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(0, 3%, 29%);
 }
 
 
